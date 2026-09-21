@@ -46,21 +46,23 @@
 
 <!-- ============ HERO ============ -->
 <section class="hero">
+  <div class="grid-bg"></div>
+  <div class="orbs"><span class="orb orb-1"></span><span class="orb orb-2"></span></div>
   <div class="wrap">
     <div class="hero-grid">
       <div>
-        <span class="eyebrow"><i class="icn" style="--i:url('/assets/icons/sprout.svg')"></i> Offline-first · No sign-up needed</span>
-        <h1>Build better habits, <span class="accent">one day</span> at a time.</h1>
-        <p class="lede">Sprout turns small, consistent actions into lasting change — real streaks, honest analytics, goals, routines and a calm meditation timer. All yours, all on your device.</p>
-        <div class="hero-actions">
+        <span class="eyebrow anim-up d-1"><i class="icn" style="--i:url('/assets/icons/sprout.svg')"></i> Offline-first · No sign-up needed</span>
+        <h1 class="anim-up d-2">Build better habits, <span class="accent">one day</span> at a time.</h1>
+        <p class="lede anim-up d-3">Sprout turns small, consistent actions into lasting change — real streaks, honest analytics, goals, routines and a calm meditation timer. All yours, all on your device.</p>
+        <div class="hero-actions anim-up d-4">
           <a href="#download" class="btn btn-dark btn-lg">Download free</a>
           <a href="#how" class="btn btn-ghost btn-lg">See how it works</a>
         </div>
-        <p class="hero-note">Works fully offline · Free to start · No account required</p>
+        <p class="hero-note anim-up d-5">Works fully offline · Free to start · No account required</p>
       </div>
 
       <!-- Product mockup: Sprout home screen -->
-      <div class="hero-visual">
+      <div class="hero-visual anim-up d-3">
         <div class="phone">
           <div class="notch"></div>
           <div class="app-screen">
@@ -144,6 +146,21 @@
   </div>
 </section>
 
+<!-- ============ TRUST BAR ============ -->
+<div class="trust-bar">
+  <div class="wrap">
+    <div class="trust-inner">
+      <div class="trust-item"><span class="tn" data-count="100" data-suffix="%">0%</span><span class="tl">Works offline</span></div>
+      <span class="trust-sep"></span>
+      <div class="trust-item"><span class="tn">0</span><span class="tl">Ads &amp; trackers</span></div>
+      <span class="trust-sep"></span>
+      <div class="trust-item"><span class="tn">No</span><span class="tl">Account required</span></div>
+      <span class="trust-sep"></span>
+      <div class="trust-item"><span class="tn">1-tap</span><span class="tl">Daily check-in</span></div>
+    </div>
+  </div>
+</div>
+
 <!-- ============ FEATURES ============ -->
 <section id="features">
   <div class="wrap">
@@ -182,6 +199,63 @@
         <div class="ficon"><i class="icn" style="--i:url('/assets/icons/bell.svg')"></i></div>
         <h3>Smart reminders</h3>
         <p>On-device reminders that fire on time, offline, and stay put across time zones and DST shifts.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span><i class="icn" style="--i:url('/assets/icons/flame.svg')"></i> Real streaks</span>
+    <span><i class="icn" style="--i:url('/assets/icons/graph.svg')"></i> Honest analytics</span>
+    <span><i class="icn" style="--i:url('/assets/icons/target.svg')"></i> Goals &amp; routines</span>
+    <span><i class="icn" style="--i:url('/assets/icons/lotus.svg')"></i> Meditation timer</span>
+    <span><i class="icn" style="--i:url('/assets/icons/trophy.svg')"></i> Achievements</span>
+    <span><i class="icn" style="--i:url('/assets/icons/bell.svg')"></i> Smart reminders</span>
+    <span><i class="icn" style="--i:url('/assets/icons/shield.svg')"></i> Private by design</span>
+    <!-- duplicate for seamless loop -->
+    <span><i class="icn" style="--i:url('/assets/icons/flame.svg')"></i> Real streaks</span>
+    <span><i class="icn" style="--i:url('/assets/icons/graph.svg')"></i> Honest analytics</span>
+    <span><i class="icn" style="--i:url('/assets/icons/target.svg')"></i> Goals &amp; routines</span>
+    <span><i class="icn" style="--i:url('/assets/icons/lotus.svg')"></i> Meditation timer</span>
+    <span><i class="icn" style="--i:url('/assets/icons/trophy.svg')"></i> Achievements</span>
+    <span><i class="icn" style="--i:url('/assets/icons/bell.svg')"></i> Smart reminders</span>
+    <span><i class="icn" style="--i:url('/assets/icons/shield.svg')"></i> Private by design</span>
+  </div>
+</div>
+
+<!-- ============ ANALYTICS SHOWCASE ============ -->
+<section id="showcase" class="showcase">
+  <div class="wrap">
+    <div class="split">
+      <div class="chart reveal-scale">
+        <div class="chart-head">
+          <b>92%</b>
+          <span class="up">▲ 18% this month</span>
+        </div>
+        <div class="chart-bars">
+          <div class="cbar mut" style="height:38%"></div>
+          <div class="cbar mut" style="height:55%"></div>
+          <div class="cbar" style="height:47%"></div>
+          <div class="cbar" style="height:70%"></div>
+          <div class="cbar" style="height:62%"></div>
+          <div class="cbar" style="height:88%"></div>
+          <div class="cbar" style="height:100%"></div>
+        </div>
+        <div class="chart-x">
+          <span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span>
+        </div>
+      </div>
+      <div class="reveal-right">
+        <span class="kicker">Progress you can trust</span>
+        <h2>See the trend, not a vanity number</h2>
+        <p>Sprout charts your real completion rate and weekly consistency so you can spot momentum before it fades. Every bar is drawn from your own stored check-ins — nothing inflated, nothing invented.</p>
+        <ul class="check-list">
+          <li><span class="tick">✓</span> Weekly &amp; monthly consistency at a glance</li>
+          <li><span class="tick">✓</span> Streaks and trends that survive travel &amp; DST</li>
+          <li><span class="tick">✓</span> Insights that update the instant you check in</li>
+        </ul>
       </div>
     </div>
   </div>
@@ -323,15 +397,21 @@
 <section id="download" class="cta-band">
   <div class="wrap">
     <div class="cta-inner reveal">
+      <div class="orbs"><span class="orb orb-c1"></span></div>
       <h2>Plant the first seed today</h2>
       <p>Download Sprout and start building habits that actually last.</p>
       <div class="store-badges">
         <a class="store-badge" href="#" aria-label="Download on the App Store">
-          <i class="icn ic-white" style="--i:url('/assets/logo.svg');width:20px;height:20px"></i>
+          <svg class="store-ico" viewBox="0 0 384 512" fill="#fff" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zM262 108.7c26.3-31.2 23.9-59.6 23.1-69.9-23.2 1.4-50.1 15.9-65.5 33.8-16.9 19.2-26.8 42.9-24.6 68.7 25.1 1.9 48-11 67-32.6z"/></svg>
           <span><small>Download on the</small><b>App Store</b></span>
         </a>
         <a class="store-badge" href="#" aria-label="Get it on Google Play">
-          <i class="icn ic-white" style="--i:url('/assets/logo.svg');width:20px;height:20px"></i>
+          <svg class="store-ico" viewBox="0 0 512 512" aria-hidden="true">
+            <path fill="#00d2ff" d="M62 44c-6 4-9 11-9 20v384c0 9 3 16 9 20l2 2 215-215v-2z"/>
+            <path fill="#00e676" d="M64 42l215 213 60-60L102 24C88 15 74 33 64 42z"/>
+            <path fill="#ff3a44" d="M64 470c10 9 24 32 38 22l236-137-60-60z"/>
+            <path fill="#ffce00" d="M338 195l-60 60 60 60 82-47c20-11 20-35 0-46z"/>
+          </svg>
           <span><small>Get it on</small><b>Google Play</b></span>
         </a>
       </div>
@@ -339,6 +419,11 @@
     </div>
   </div>
 </section>
+
+<!-- ============ STICKY MOBILE CTA ============ -->
+<div class="sticky-cta" id="stickyCta">
+  <a href="#download" class="btn btn-dark">Download Sprout — free</a>
+</div>
 
 <!-- ============ FOOTER ============ -->
 <footer class="site-footer">
@@ -395,9 +480,9 @@
   onScroll();
   window.addEventListener('scroll', onScroll, { passive: true });
 
-  // Scroll reveal
+  // Scroll reveal (base + directional/scale variants)
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var reveals = document.querySelectorAll('.reveal');
+  var reveals = document.querySelectorAll('.reveal, .reveal-scale, .reveal-left, .reveal-right');
   if (reduce || !('IntersectionObserver' in window)) {
     reveals.forEach(function (el) { el.classList.add('in'); });
   } else {
@@ -407,6 +492,19 @@
       });
     }, { threshold: 0.15 });
     reveals.forEach(function (el) { io.observe(el); });
+  }
+
+  // Sticky mobile CTA — reveal after the hero scrolls away, hide near footer
+  var sticky = document.getElementById('stickyCta');
+  var footer = document.querySelector('.site-footer');
+  if (sticky) {
+    var toggleSticky = function () {
+      var past = window.scrollY > 620;
+      var nearFooter = footer && footer.getBoundingClientRect().top < window.innerHeight + 80;
+      sticky.classList.toggle('show', past && !nearFooter);
+    };
+    toggleSticky();
+    window.addEventListener('scroll', toggleSticky, { passive: true });
   }
 
   // Count-up numbers
