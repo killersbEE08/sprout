@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Sprout logo">
+  <defs>
+    <linearGradient id="sproutBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9B5DE5"/>
+      <stop offset="1" stop-color="#7C4DFF"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="116" fill="url(#sproutBg)"/>
+  <g transform="translate(0,-30) scale(0.5)">
+    <path d="M512 824 C 506 700 512 600 512 500" fill="none" stroke="#FFFFFF" stroke-width="60" stroke-linecap="round"/>
+    <path d="M512 656 C 420 520 300 452 172 430 C 218 560 318 648 458 690 Z" fill="#FFFFFF"/>
+    <path d="M512 656 C 604 520 724 452 852 430 C 806 560 706 648 566 690 Z" fill="#FFFFFF"/>
+    <path d="M506 648 C 406 562 316 504 214 466" fill="none" stroke="#7C4DFF" stroke-width="12" stroke-linecap="round" opacity="0.15"/>
+    <path d="M518 648 C 618 562 708 504 810 466" fill="none" stroke="#7C4DFF" stroke-width="12" stroke-linecap="round" opacity="0.15"/>
+    <circle cx="512" cy="452" r="64" fill="#FFE14D"/>
+  </g>
+</svg>
