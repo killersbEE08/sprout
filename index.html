@@ -4,18 +4,108 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sprout — Build better habits, one day at a time</title>
-<meta name="description" content="Sprout is an offline-first habit & wellness app. Track habits, build real streaks, hit goals, meditate and stay consistent — no account required.">
+<meta name="description" content="Sprout is an offline-first habit & wellness app. Track habits, build real streaks, hit goals, meditate and stay consistent — no account required, no ads, private by design.">
+<meta name="keywords" content="habit tracker, habit app, streaks, offline habit tracker, meditation timer, wellness app, private habit tracker, no account habit app">
+<meta name="author" content="Prince Labs">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta name="theme-color" content="#ffffff">
+<link rel="canonical" href="https://sprout.princelabs.me/">
+
+<!-- Open Graph -->
 <meta property="og:title" content="Sprout — Build better habits, one day at a time">
-<meta property="og:description" content="Offline-first habit tracking with real streaks, analytics, goals, routines and meditation.">
+<meta property="og:description" content="Offline-first habit tracking with real streaks, honest analytics, goals, routines and meditation. No account, no ads, private by design.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://sprout.princelabs.me/">
+<meta property="og:site_name" content="Sprout">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://sprout.princelabs.me/assets/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Sprout — Build better habits, one day at a time">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sprout — Build better habits, one day at a time">
+<meta name="twitter:description" content="Offline-first habit tracking with real streaks, honest analytics, goals, routines and meditation. No account, no ads.">
+<meta name="twitter:image" content="https://sprout.princelabs.me/assets/og-cover.png">
+
 <link rel="icon" type="image/svg+xml" href="/assets/logo.svg">
 <link rel="apple-touch-icon" href="/assets/logo.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/styles.css">
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "Sprout",
+  "operatingSystem": "iOS, Android",
+  "applicationCategory": "HealthApplication",
+  "description": "Sprout is an offline-first habit & wellness app. Track habits, build timezone-safe streaks, hit goals, follow routines and meditate — no account required, no ads, private by design.",
+  "url": "https://sprout.princelabs.me/",
+  "image": "https://sprout.princelabs.me/assets/og-cover.png",
+  "featureList": [
+    "Habit tracking",
+    "Timezone-safe streaks",
+    "Honest analytics & trends",
+    "Goals & routines",
+    "Meditation timer",
+    "Achievements",
+    "Smart on-device reminders",
+    "Offline-first, no account required"
+  ],
+  "offers": [
+    { "@type": "Offer", "name": "Free", "price": "0", "priceCurrency": "USD" },
+    { "@type": "Offer", "name": "Premium", "price": "3.99", "priceCurrency": "USD" }
+  ],
+  "publisher": { "@type": "Organization", "name": "Prince Labs", "url": "https://sprout.princelabs.me/" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Sprout",
+  "url": "https://sprout.princelabs.me/",
+  "description": "Offline-first habit & wellness app — real streaks, honest analytics, goals, routines and meditation."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do I need an account to use Sprout?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. Sprout is guest-friendly — you can create and track habits without signing up. An account is only needed if you want cloud sync across devices or access to the community." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does it work offline?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Sprout is offline-first. All your data is stored on your device, so the app works fully with no network connection. Reminders also fire locally, even offline." }
+    },
+    {
+      "@type": "Question",
+      "name": "Are the streaks and stats accurate?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Every number is derived from your actual completion records. Streaks are calculated in calendar-day space and stored in UTC, so daylight saving and travel never corrupt your progress." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I delete my data or account?",
+      "acceptedAnswer": { "@type": "Answer", "text": "You can reset your data or delete your account directly in the app's settings. You can also request full account deletion by email — see our account deletion page for details." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Sprout really free?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. The core habit tracker is free forever. Premium is an optional subscription that unlocks advanced features and helps support ongoing development." }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -44,6 +134,7 @@
   </div>
 </header>
 
+<main>
 <!-- ============ HERO ============ -->
 <section class="hero">
   <div class="grid-bg"></div>
@@ -419,6 +510,7 @@
     </div>
   </div>
 </section>
+</main>
 
 <!-- ============ STICKY MOBILE CTA ============ -->
 <div class="sticky-cta" id="stickyCta">

@@ -1,0 +1,35 @@
+# Sprout
+
+> Sprout is an offline-first habit and wellness app that turns small, consistent
+> daily actions into lasting change. It tracks habits, builds timezone-safe streaks,
+> shows honest analytics, supports goals and routines, and includes a calming
+> meditation timer. It works fully offline and requires no account or sign-up.
+
+## Key facts
+- Category: Habit tracker / wellness / productivity app
+- Platforms: iOS and Android (coming soon)
+- Price: Free forever core app; optional Premium at $3.99/month
+- Privacy: Offline-first, data stored locally on device, no ads, no trackers, no data selling
+- Account: Not required — fully usable as a guest; an account is only needed for optional cloud sync and community
+
+## Core features
+- Real streaks: computed in calendar-day space and stored in UTC, so travel and daylight saving never break progress
+- Honest analytics: completion rates, weekly consistency and trend charts derived only from real, stored check-ins
+- Goals & routines: measurable goals and morning/evening habit chains
+- Meditation timer: distraction-free timer with recorded sessions
+- Achievements: milestones earned from genuine effort, never fabricated
+- Smart reminders: on-device reminders that fire on time, offline, across time zones and DST
+
+## Premium ($3.99/month)
+Everything in Free, plus advanced analytics & insights, unlimited goals & routines,
+cloud sync, community access, and premium themes. Billed via the app store.
+
+## Pages
+- Home: https://sprout.princelabs.me/
+- Support: https://sprout.princelabs.me/support
+- Privacy Policy: https://sprout.princelabs.me/privacy
+- Terms of Service: https://sprout.princelabs.me/terms
+- Account deletion: https://sprout.princelabs.me/delete-account
+
+## Contact
+- Support email: support@sprout.app
