@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+(function(){
+  try{
+    var t = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', t);
+  }catch(e){}
+  function wire(){
+    var btn = document.getElementById('themeToggle');
+    if(!btn) return;
+    btn.addEventListener('click', function(){
+      var cur = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+      var next = cur === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      try{ localStorage.setItem('theme', next); }catch(e){}
+      var m = document.querySelector('meta[name="theme-color"]');
+      if(m) m.setAttribute('content', next === 'dark' ? '#0b0b0f' : '#ffffff');
+    });
+  }
+  if(document.readyState === 'loading'){ document.addEventListener('DOMContentLoaded', wire); } else { wire(); }
+})();
+</script>
+<title>Blog · Sprout — habits, streaks & privacy</title>
+<meta name="description" content="Practical, honest writing about building habits that last, how streaks really work, and tracking your progress without giving up your privacy.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#ffffff">
+<link rel="canonical" href="https://sprout.princelabs.me/blog/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sprout">
+<meta property="og:url" content="https://sprout.princelabs.me/blog/">
+<meta property="og:title" content="The Sprout Blog — habits, streaks & privacy">
+<meta property="og:description" content="Practical, honest writing about building habits that last.">
+<meta property="og:image" content="https://sprout.princelabs.me/assets/og-cover.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://sprout.princelabs.me/assets/og-cover.png">
+<link rel="icon" type="image/svg+xml" href="/assets/logo.svg">
+<link rel="apple-touch-icon" href="/assets/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "The Sprout Blog",
+  "url": "https://sprout.princelabs.me/blog/",
+  "description": "Practical, honest writing about building habits that last, how streaks really work, and privacy-first habit tracking.",
+  "publisher": { "@type": "Organization", "name": "Prince Labs" },
+  "blogPost": [
+    { "@type": "BlogPosting", "headline": "How streaks actually work (and why yours keeps breaking)", "url": "https://sprout.princelabs.me/blog/how-streaks-work/", "datePublished": "2026-09-21" },
+    { "@type": "BlogPosting", "headline": "Habit tracking without giving up your privacy", "url": "https://sprout.princelabs.me/blog/habit-tracking-without-giving-up-privacy/", "datePublished": "2026-09-21" },
+    { "@type": "BlogPosting", "headline": "Small habits that actually stick: a practical guide", "url": "https://sprout.princelabs.me/blog/small-habits-that-actually-stick/", "datePublished": "2026-09-21" }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <div class="wrap">
+    <nav class="nav" id="nav">
+      <a class="brand" href="/"><img class="logo" src="/assets/logo.svg" alt="Sprout logo"> Sprout</a>
+      <div class="nav-links">
+        <a href="/#features">Features</a>
+        <a href="/#how">How it works</a>
+        <a href="/#premium">Premium</a>
+        <a href="/blog/">Blog</a>
+        <a href="/support">Support</a>
+      </div>
+      <div class="nav-cta">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode" title="Toggle theme">
+          <svg class="ico-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          <svg class="ico-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+        <a href="/#download" class="btn btn-dark hide-mobile">Get the app</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<header class="doc-hero">
+  <div class="wrap narrow">
+    <div class="eyebrow"><i class="icn ic-white" style="--i:url('/assets/icons/leaf.svg');width:15px;height:15px"></i> The Sprout Blog</div>
+    <h1>Ideas for building better days</h1>
+    <p class="sub">Practical, honest writing on habits, streaks and staying consistent — without giving up your privacy.</p>
+  </div>
+</header>
+
+<main class="doc">
+  <div class="wrap">
+    <div class="post-list">
+      <a class="post-card" href="/blog/how-streaks-work/">
+        <div class="post-cover c1"><i class="icn" style="--i:url('/assets/icons/flame.svg')"></i></div>
+        <div class="post-body">
+          <span class="post-tag">Habits</span>
+          <h3>How streaks actually work (and why yours keeps breaking)</h3>
+          <p>Streaks are simple in theory and surprisingly tricky in practice. Here's what really counts as a day — and how to keep one alive across travel and time zones.</p>
+          <span class="post-meta">Sep 21, 2026 · 6 min read</span>
+        </div>
+      </a>
+      <a class="post-card" href="/blog/habit-tracking-without-giving-up-privacy/">
+        <div class="post-cover c2"><i class="icn" style="--i:url('/assets/icons/shield.svg')"></i></div>
+        <div class="post-body">
+          <span class="post-tag">Privacy</span>
+          <h3>Habit tracking without giving up your privacy</h3>
+          <p>Most trackers want an account, your data and a slice of your attention. Here's why local-first matters and how to judge an app before you trust it.</p>
+          <span class="post-meta">Sep 21, 2026 · 7 min read</span>
+        </div>
+      </a>
+      <a class="post-card" href="/blog/small-habits-that-actually-stick/">
+        <div class="post-cover c3"><i class="icn" style="--i:url('/assets/icons/brain.svg')"></i></div>
+        <div class="post-body">
+          <span class="post-tag">Guide</span>
+          <h3>Small habits that actually stick: a practical guide</h3>
+          <p>Motivation fades. Systems don't. A no-nonsense guide to starting tiny, anchoring habits to your day, and recovering when you slip.</p>
+          <span class="post-meta">Sep 21, 2026 · 8 min read</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="/"><img class="logo" src="/assets/logo.svg" alt="Sprout logo" width="30" height="30"> Sprout</a>
+        <p class="footer-about">An offline-first habit &amp; wellness app that turns small daily actions into lasting change.</p>
+      </div>
+      <div class="footer-col"><h4>Product</h4><a href="/#features">Features</a><a href="/#how">How it works</a><a href="/#premium">Premium</a><a href="/#download">Download</a></div>
+      <div class="footer-col"><h4>Resources</h4><a href="/blog/">Blog</a><a href="/support">Help &amp; contact</a><a href="/#faq">FAQ</a></div>
+      <div class="footer-col"><h4>Legal</h4><a href="/privacy">Privacy Policy</a><a href="/terms">Terms of Service</a><a href="/delete-account">Delete account</a></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Sprout. All rights reserved.</span>
+      <span>Made with 🌱 for people building better days.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var nav=document.getElementById('nav'),toggle=document.getElementById('navToggle');
+  if(toggle){toggle.addEventListener('click',function(){nav.classList.toggle('open');});}
+</script>
+</body>
+</html>
