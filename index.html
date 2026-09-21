@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sprout — Build better habits, one day at a time</title>
-<meta name="description" content="Sprout is a playful, offline-first habit & wellness app. Track habits, build real streaks, hit goals, meditate and stay consistent — no account required.">
-<meta name="theme-color" content="#7C4DFF">
+<meta name="description" content="Sprout is an offline-first habit & wellness app. Track habits, build real streaks, hit goals, meditate and stay consistent — no account required.">
+<meta name="theme-color" content="#ffffff">
 <meta property="og:title" content="Sprout — Build better habits, one day at a time">
 <meta property="og:description" content="Offline-first habit tracking with real streaks, analytics, goals, routines and meditation.">
 <meta property="og:type" content="website">
@@ -14,13 +14,13 @@
 <link rel="apple-touch-icon" href="/assets/logo.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
 
 <!-- ============ HEADER ============ -->
-<header class="site-header">
+<header class="site-header" id="siteHeader">
   <div class="wrap">
     <nav class="nav" id="nav">
       <a class="brand" href="/">
@@ -49,52 +49,92 @@
   <div class="wrap">
     <div class="hero-grid">
       <div>
-        <span class="eyebrow">🌱 Offline-first · No sign-up needed</span>
+        <span class="eyebrow"><i class="icn" style="--i:url('/assets/icons/sprout.svg')"></i> Offline-first · No sign-up needed</span>
         <h1>Build better habits, <span class="accent">one day</span> at a time.</h1>
-        <p class="lede">Sprout turns small, consistent actions into lasting change — with real streaks, honest analytics, goals, routines and a calming meditation timer. All yours, all on your device.</p>
+        <p class="lede">Sprout turns small, consistent actions into lasting change — real streaks, honest analytics, goals, routines and a calm meditation timer. All yours, all on your device.</p>
         <div class="hero-actions">
           <a href="#download" class="btn btn-dark btn-lg">Download free</a>
           <a href="#how" class="btn btn-ghost btn-lg">See how it works</a>
         </div>
-        <p class="hero-note">✓ Works fully offline &nbsp;·&nbsp; ✓ Free to start &nbsp;·&nbsp; ✓ No account required</p>
+        <p class="hero-note">Works fully offline · Free to start · No account required</p>
       </div>
 
-      <!-- Phone mockup -->
-      <div class="phone-stage">
+      <!-- Product mockup: Sprout home screen -->
+      <div class="hero-visual">
         <div class="phone">
           <div class="notch"></div>
-          <div class="screen">
-            <div class="screen-top">
-              <div class="greet">Good morning ☀️</div>
-              <div class="greet-name">Let's grow today</div>
-              <div class="ring-row">
-                <div class="ring"><b>72%</b></div>
-                <div class="ring-label">
-                  <b>5 of 7 done</b>
-                  🔥 12-day streak
-                </div>
+          <div class="app-screen">
+            <div class="app-status">
+              <span>9:41</span>
+              <span class="dots">
+                <i class="icn" style="--i:url('/assets/icons/graph.svg')"></i>
+                <i class="icn" style="--i:url('/assets/icons/flame.svg')"></i>
+              </span>
+            </div>
+
+            <div class="app-head">
+              <div>
+                <div class="app-greet">Good morning,</div>
+                <div class="app-name">Prince</div>
+              </div>
+              <span class="streak-pill">
+                <i class="icn" style="--i:url('/assets/icons/flame.svg')"></i> 12
+              </span>
+            </div>
+
+            <div class="week">
+              <div class="d done"><span class="lbl">M</span><span class="dot">15</span></div>
+              <div class="d done"><span class="lbl">T</span><span class="dot">16</span></div>
+              <div class="d done"><span class="lbl">W</span><span class="dot">17</span></div>
+              <div class="d today"><span class="lbl">T</span><span class="dot">18</span></div>
+              <div class="d"><span class="lbl">F</span><span class="dot">19</span></div>
+              <div class="d"><span class="lbl">S</span><span class="dot">20</span></div>
+              <div class="d"><span class="lbl">S</span><span class="dot">21</span></div>
+            </div>
+
+            <div class="progress-card">
+              <div class="ring-wrap">
+                <svg width="58" height="58" viewBox="0 0 58 58">
+                  <circle class="ring-track" cx="29" cy="29" r="25" fill="none" stroke-width="6"></circle>
+                  <circle class="ring-arc" cx="29" cy="29" r="25" fill="none" stroke-width="6"
+                          style="--circ:157; --off:44; stroke-dasharray:157; stroke-dashoffset:44; animation:ringFill 1.4s .3s ease-out both;"></circle>
+                </svg>
+                <span class="in-ring">72%</span>
+              </div>
+              <div class="p-meta">
+                <b>5 of 7 done</b>
+                <span>Almost there — keep it up.</span>
               </div>
             </div>
-            <div class="screen-body">
-              <div class="h-card done">
-                <div class="emoji tint-yellow">🧘</div>
-                <div class="h-meta"><b>Meditate</b><span>10 min · Morning</span></div>
-                <div class="check">✓</div>
+
+            <div class="app-grid">
+              <div class="g-card p-cream done">
+                <div class="g-top">
+                  <span class="g-chip" style="background:#FBE6A8"><i class="icn ic-amber" style="--i:url('/assets/icons/lotus.svg')"></i></span>
+                  <span class="g-check" style="background:#C08401"><span class="tick-mark"></span></span>
+                </div>
+                <div><div class="g-name">Meditate</div><div class="g-sub">10 min · Morning</div></div>
               </div>
-              <div class="h-card done">
-                <div class="emoji tint-blue">💧</div>
-                <div class="h-meta"><b>Drink water</b><span>8 glasses</span></div>
-                <div class="check">✓</div>
+              <div class="g-card p-lav done">
+                <div class="g-top">
+                  <span class="g-chip" style="background:#D9E7FF"><i class="icn ic-blue" style="--i:url('/assets/icons/water.svg')"></i></span>
+                  <span class="g-check" style="background:#2F80ED"><span class="tick-mark"></span></span>
+                </div>
+                <div><div class="g-name">Drink water</div><div class="g-sub">6 / 8 glasses</div></div>
               </div>
-              <div class="h-card">
-                <div class="emoji tint-mint">📖</div>
-                <div class="h-meta"><b>Read</b><span>20 pages · Evening</span></div>
-                <div class="check"></div>
+              <div class="g-card p-mint">
+                <div class="g-top">
+                  <span class="g-chip" style="background:#CDEFD6"><i class="icn ic-green" style="--i:url('/assets/icons/book.svg')"></i></span>
+                  <span class="g-check"></span>
+                </div>
+                <div><div class="g-name">Read</div><div class="g-sub">20 pages · Evening</div></div>
               </div>
-              <div class="h-card">
-                <div class="emoji tint-pink">🏃</div>
-                <div class="h-meta"><b>Move your body</b><span>30 min</span></div>
-                <div class="check"></div>
+              <div class="g-card p-pink">
+                <div class="g-top">
+                  <span class="g-chip" style="background:#FAD1E4"><i class="icn ic-pink" style="--i:url('/assets/icons/bike.svg')"></i></span>
+                  <span class="g-check"></span>
+                </div>
+                <div><div class="g-name">Move your body</div><div class="g-sub">30 min</div></div>
               </div>
             </div>
           </div>
@@ -107,39 +147,39 @@
 <!-- ============ FEATURES ============ -->
 <section id="features">
   <div class="wrap">
-    <div class="section-head">
+    <div class="section-head reveal">
       <span class="kicker">Everything you need</span>
       <h2>One calm home for every habit</h2>
-      <p>Sprout brings habits, tasks, goals, routines and mindfulness together — with numbers you can actually trust.</p>
+      <p>Habits, tasks, goals, routines and mindfulness in one place — with numbers you can actually trust.</p>
     </div>
     <div class="features">
-      <div class="feature">
-        <div class="ficon tint-purple">🔥</div>
+      <div class="feature reveal d1">
+        <div class="ficon"><i class="icn" style="--i:url('/assets/icons/flame.svg')"></i></div>
         <h3>Real streaks</h3>
         <p>Timezone-safe streaks computed in calendar-day space, so travel and daylight saving never break your progress.</p>
       </div>
-      <div class="feature">
-        <div class="ficon tint-blue">📊</div>
+      <div class="feature reveal d2">
+        <div class="ficon"><i class="icn" style="--i:url('/assets/icons/graph.svg')"></i></div>
         <h3>Honest analytics</h3>
         <p>Completion rates, weekly consistency and trend charts — every number traces back to your real, stored data.</p>
       </div>
-      <div class="feature">
-        <div class="ficon tint-mint">🎯</div>
+      <div class="feature reveal d3">
+        <div class="ficon"><i class="icn" style="--i:url('/assets/icons/target.svg')"></i></div>
         <h3>Goals &amp; routines</h3>
         <p>Set measurable goals and chain habits into morning or evening routines that actually stick.</p>
       </div>
-      <div class="feature">
-        <div class="ficon tint-yellow">🧘</div>
+      <div class="feature reveal d1">
+        <div class="ficon"><i class="icn" style="--i:url('/assets/icons/lotus.svg')"></i></div>
         <h3>Meditation timer</h3>
-        <p>A working, distraction-free timer with recorded sessions to help you slow down and reset.</p>
+        <p>A distraction-free timer with recorded sessions to help you slow down and reset.</p>
       </div>
-      <div class="feature">
-        <div class="ficon tint-pink">🏆</div>
+      <div class="feature reveal d2">
+        <div class="ficon"><i class="icn" style="--i:url('/assets/icons/trophy.svg')"></i></div>
         <h3>Achievements</h3>
         <p>Unlock milestones earned from genuine effort — never fabricated numbers or fake badges.</p>
       </div>
-      <div class="feature">
-        <div class="ficon tint-peach">🔔</div>
+      <div class="feature reveal d3">
+        <div class="ficon"><i class="icn" style="--i:url('/assets/icons/bell.svg')"></i></div>
         <h3>Smart reminders</h3>
         <p>On-device reminders that fire on time, offline, and stay put across time zones and DST shifts.</p>
       </div>
@@ -148,25 +188,25 @@
 </section>
 
 <!-- ============ HOW IT WORKS ============ -->
-<section id="how" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+<section id="how" style="background:var(--bg-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
   <div class="wrap">
-    <div class="section-head">
+    <div class="section-head reveal">
       <span class="kicker">How it works</span>
       <h2>Start growing in three steps</h2>
       <p>No onboarding maze, no forced sign-up. Add a habit and you're already building momentum.</p>
     </div>
     <div class="steps">
-      <div class="step">
+      <div class="step reveal d1">
         <div class="num">1</div>
         <h3>Add your habits</h3>
         <p>Pick daily, weekly or custom schedules. Choose an icon and a reminder — done in seconds.</p>
       </div>
-      <div class="step">
+      <div class="step reveal d2">
         <div class="num">2</div>
         <h3>Check in daily</h3>
         <p>One tap to complete, with undo. Sprout keeps a clean, idempotent record for every day.</p>
       </div>
-      <div class="step">
+      <div class="step reveal d3">
         <div class="num">3</div>
         <h3>Watch it grow</h3>
         <p>Streaks build, analytics fill in and achievements unlock — powered entirely by your real progress.</p>
@@ -179,8 +219,8 @@
 <section id="privacy-first">
   <div class="wrap">
     <div class="split">
-      <div>
-        <span class="kicker" style="color:var(--purple);font-weight:700;letter-spacing:1.4px;text-transform:uppercase;font-size:14px;">Yours, and only yours</span>
+      <div class="reveal">
+        <span class="kicker">Yours, and only yours</span>
         <h2>Private by design, offline by default</h2>
         <p>Everything you track is stored locally on your device first. Sprout works with no network and no account — create one only when you want cloud sync and community.</p>
         <ul class="check-list">
@@ -190,32 +230,34 @@
           <li><span class="tick">✓</span> Delete your content in-app or request full account deletion anytime</li>
         </ul>
         <div class="mt-lg">
-          <a href="/privacy" class="btn btn-light">Read our Privacy Policy</a>
+          <a href="/privacy" class="btn btn-light">
+            <i class="icn" style="--i:url('/assets/icons/shield.svg');width:18px;height:18px;color:var(--accent)"></i>
+            Read our Privacy Policy
+          </a>
         </div>
       </div>
-      <div class="panel">
+      <div class="panel reveal d2">
         <div class="stat-grid">
-          <div class="stat"><div class="n">100%</div><div class="l">Works offline</div></div>
+          <div class="stat"><div class="n" data-count="100" data-suffix="%">0%</div><div class="l">Works offline</div></div>
           <div class="stat"><div class="n">0</div><div class="l">Ads that track you</div></div>
           <div class="stat"><div class="n">1-tap</div><div class="l">Daily check-in</div></div>
           <div class="stat"><div class="n">∞</div><div class="l">Habits &amp; goals</div></div>
         </div>
-        <p style="margin:22px 0 0;opacity:.92;font-size:15px;">Guest-friendly and dark-mode ready, with accessible controls and a reduced-motion setting built in.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ============ PREMIUM ============ -->
-<section id="premium" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+<section id="premium" style="background:var(--bg-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
   <div class="wrap">
-    <div class="section-head">
+    <div class="section-head reveal">
       <span class="kicker">Sprout Premium</span>
       <h2>Free forever. Premium when you're ready.</h2>
       <p>The core habit tracker is completely free. Upgrade to unlock the full toolkit and support development.</p>
     </div>
     <div class="plans">
-      <div class="plan">
+      <div class="plan reveal d1">
         <h3>Free</h3>
         <div class="price">$0</div>
         <ul>
@@ -227,7 +269,7 @@
         </ul>
         <a href="#download" class="btn btn-light" style="width:100%;">Get started</a>
       </div>
-      <div class="plan featured">
+      <div class="plan featured reveal d2">
         <span class="tag">Most popular</span>
         <h3>Premium</h3>
         <div class="price">$3.99 <span>/ month</span></div>
@@ -236,23 +278,23 @@
           <li>Advanced analytics &amp; insights</li>
           <li>Unlimited goals &amp; routines</li>
           <li>Cloud sync &amp; community access</li>
-          <li>Premium themes &amp; support the app</li>
+          <li>Premium themes &amp; priority support</li>
         </ul>
         <a href="#download" class="btn btn-dark" style="width:100%;">Go Premium</a>
       </div>
     </div>
-    <p class="center" style="color:var(--muted);font-size:14px;margin-top:20px;">Prices may vary by region. Subscriptions are billed through your app store and can be managed there anytime.</p>
+    <p class="center" style="color:var(--muted);font-size:14px;margin-top:24px;">Prices may vary by region. Subscriptions are billed through your app store and can be managed there anytime.</p>
   </div>
 </section>
 
 <!-- ============ FAQ ============ -->
 <section id="faq">
   <div class="wrap">
-    <div class="section-head">
+    <div class="section-head reveal">
       <span class="kicker">FAQ</span>
       <h2>Questions, answered</h2>
     </div>
-    <div class="faq">
+    <div class="faq reveal">
       <details class="qa" open>
         <summary>Do I need an account to use Sprout?</summary>
         <p>No. Sprout is guest-friendly — you can create and track habits without signing up. An account is only needed if you want cloud sync across devices or access to the community.</p>
@@ -280,20 +322,20 @@
 <!-- ============ DOWNLOAD CTA ============ -->
 <section id="download" class="cta-band">
   <div class="wrap">
-    <div class="cta-inner">
-      <h2>Plant the first seed today 🌱</h2>
+    <div class="cta-inner reveal">
+      <h2>Plant the first seed today</h2>
       <p>Download Sprout and start building habits that actually last.</p>
       <div class="store-badges">
         <a class="store-badge" href="#" aria-label="Download on the App Store">
-          <span style="font-size:22px;"></span>
+          <i class="icn ic-white" style="--i:url('/assets/logo.svg');width:20px;height:20px"></i>
           <span><small>Download on the</small><b>App Store</b></span>
         </a>
         <a class="store-badge" href="#" aria-label="Get it on Google Play">
-          <span style="font-size:22px;">▶</span>
+          <i class="icn ic-white" style="--i:url('/assets/logo.svg');width:20px;height:20px"></i>
           <span><small>Get it on</small><b>Google Play</b></span>
         </a>
       </div>
-      <p style="margin:22px 0 0;font-size:14px;opacity:.85;">Coming soon to the App Store and Google Play.</p>
+      <p style="margin:24px 0 0;font-size:14px;color:#8f8f9a;">Coming soon to the App Store and Google Play.</p>
     </div>
   </div>
 </section>
@@ -304,10 +346,10 @@
     <div class="footer-grid">
       <div>
         <a class="brand" href="/">
-          <img class="logo" src="/assets/logo.svg" alt="Sprout logo" width="36" height="36">
+          <img class="logo" src="/assets/logo.svg" alt="Sprout logo" width="30" height="30">
           Sprout
         </a>
-        <p class="footer-about">A playful, offline-first habit &amp; wellness app that turns small daily actions into lasting change.</p>
+        <p class="footer-about">An offline-first habit &amp; wellness app that turns small daily actions into lasting change.</p>
       </div>
       <div class="footer-col">
         <h4>Product</h4>
@@ -341,12 +383,56 @@
   var nav = document.getElementById('nav');
   var toggle = document.getElementById('navToggle');
   if (toggle) {
-    toggle.addEventListener('click', function () {
-      nav.classList.toggle('open');
-    });
+    toggle.addEventListener('click', function () { nav.classList.toggle('open'); });
     nav.querySelectorAll('.nav-links a').forEach(function (a) {
       a.addEventListener('click', function () { nav.classList.remove('open'); });
     });
+  }
+
+  // Header hairline on scroll
+  var header = document.getElementById('siteHeader');
+  var onScroll = function () { header.classList.toggle('scrolled', window.scrollY > 8); };
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  // Scroll reveal
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var reveals = document.querySelectorAll('.reveal');
+  if (reduce || !('IntersectionObserver' in window)) {
+    reveals.forEach(function (el) { el.classList.add('in'); });
+  } else {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.15 });
+    reveals.forEach(function (el) { io.observe(el); });
+  }
+
+  // Count-up numbers
+  function countUp(el) {
+    var target = parseFloat(el.getAttribute('data-count'));
+    var suffix = el.getAttribute('data-suffix') || '';
+    if (reduce) { el.textContent = target + suffix; return; }
+    var start = null, dur = 1200;
+    function step(ts) {
+      if (!start) start = ts;
+      var p = Math.min((ts - start) / dur, 1);
+      el.textContent = Math.round(p * target) + suffix;
+      if (p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  var counters = document.querySelectorAll('[data-count]');
+  if ('IntersectionObserver' in window) {
+    var cio = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { countUp(e.target); cio.unobserve(e.target); }
+      });
+    }, { threshold: 0.6 });
+    counters.forEach(function (el) { cio.observe(el); });
+  } else {
+    counters.forEach(countUp);
   }
 </script>
 </body>
