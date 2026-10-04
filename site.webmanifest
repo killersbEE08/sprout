@@ -1,0 +1,16 @@
+{
+  "name": "Sprout — Build better habits",
+  "short_name": "Sprout",
+  "description": "Offline-first habit & wellness app with real streaks, honest analytics, goals, routines and meditation. No account, no ads, private by design.",
+  "lang": "en",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#7C4DFF",
+  "categories": ["health", "lifestyle", "productivity"],
+  "icons": [
+    { "src": "/assets/logo.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

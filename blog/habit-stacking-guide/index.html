@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+(function(){
+  try{
+    var t = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', t);
+  }catch(e){}
+  function wire(){
+    var btn = document.getElementById('themeToggle');
+    if(!btn) return;
+    btn.addEventListener('click', function(){
+      var cur = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+      var next = cur === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      try{ localStorage.setItem('theme', next); }catch(e){}
+      var m = document.querySelector('meta[name="theme-color"]');
+      if(m) m.setAttribute('content', next === 'dark' ? '#0b0b0f' : '#ffffff');
+    });
+  }
+  if(document.readyState === 'loading'){ document.addEventListener('DOMContentLoaded', wire); } else { wire(); }
+})();
+</script>
+<title>Habit stacking: how to attach new habits to ones you already have · Sprout</title>
+<meta name="description" content="Habit stacking is the simplest way to start a new habit: anchor it to one you already do. Learn the formula, see real examples, avoid the common mistakes, and build a stack that lasts.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#ffffff">
+<link rel="canonical" href="https://sprout.princelabs.me/blog/habit-stacking-guide/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Sprout">
+<meta property="og:url" content="https://sprout.princelabs.me/blog/habit-stacking-guide/">
+<meta property="og:title" content="Habit stacking: how to attach new habits to ones you already have">
+<meta property="og:description" content="Anchor a new habit to one you already do. The formula, real examples, common mistakes, and how to build a stack that lasts.">
+<meta property="og:image" content="https://sprout.princelabs.me/assets/og-cover.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://sprout.princelabs.me/assets/og-cover.png">
+<link rel="icon" type="image/svg+xml" href="/assets/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Habit stacking: how to attach new habits to ones you already have",
+  "description": "Habit stacking is the simplest way to start a new habit: anchor it to one you already do. Learn the formula, see real examples, avoid the common mistakes, and build a stack that lasts.",
+  "image": "https://sprout.princelabs.me/assets/og-cover.png",
+  "datePublished": "2026-10-04",
+  "dateModified": "2026-10-04",
+  "author": { "@type": "Organization", "name": "The Sprout Team" },
+  "publisher": { "@type": "Organization", "name": "one1 Eleven dev", "logo": { "@type": "ImageObject", "url": "https://sprout.princelabs.me/assets/logo.svg" } },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://sprout.princelabs.me/blog/habit-stacking-guide/" },
+  "keywords": "habit stacking, how to start a new habit, habit anchor, implementation intention, habit formula, routines"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://sprout.princelabs.me/" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://sprout.princelabs.me/blog/" },
+    { "@type": "ListItem", "position": 3, "name": "Habit stacking", "item": "https://sprout.princelabs.me/blog/habit-stacking-guide/" }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is habit stacking?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Habit stacking is a technique for starting a new habit by attaching it to one you already do automatically. You use the formula 'After I [current habit], I will [new habit]' so the existing habit becomes a reliable cue for the new one." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does habit stacking actually work?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Habit stacking works because it borrows the trigger from a behaviour that is already automatic, which removes the need to remember or rely on motivation. It is a practical form of an implementation intention, a strategy repeatedly shown in research to increase follow-through." }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a good example of a habit stack?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A good example is: 'After I pour my morning coffee, I will write down my most important task for the day.' The coffee is the anchor, the planning is the new habit, and the sequence runs on an existing cue instead of willpower." }
+    },
+    {
+      "@type": "Question",
+      "name": "How many habits can I stack at once?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Start with one new habit per anchor. Once that single addition feels automatic, usually after one to three weeks, you can chain another habit onto it. Stacking too many habits at once overloads the sequence and makes the whole stack fragile." }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <div class="wrap">
+    <nav class="nav" id="nav">
+      <a class="brand" href="/"><img class="logo" src="/assets/logo.svg" alt="Sprout logo"> Sprout</a>
+      <div class="nav-links">
+        <a href="/#features">Features</a>
+        <a href="/#how">How it works</a>
+        <a href="/#premium">Premium</a>
+        <a href="/blog/">Blog</a>
+        <a href="/support">Support</a>
+      </div>
+      <div class="nav-cta">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode" title="Toggle theme">
+          <svg class="ico-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="ico-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+        <a href="/#download" class="btn btn-dark hide-mobile">Get the app</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<header class="doc-hero">
+  <div class="wrap narrow">
+    <nav class="breadcrumb"><a href="/">Home</a> / <a href="/blog/">Blog</a> / <span>Habit stacking</span></nav>
+    <h1>Habit stacking: how to attach new habits to ones you already have</h1>
+    <div class="article-meta"><span>Habits</span> · <span>Oct 4, 2026</span> · <span>7 min read</span></div>
+  </div>
+</header>
+
+<main class="doc">
+  <article class="article">
+    <p class="lead">Habit stacking is the simplest way to start a new habit: instead of relying on memory or motivation, you anchor the new behaviour to one you already do automatically. The formula is one sentence — <em>"After I [current habit], I will [new habit]"</em> — and it works because your existing routine already has a built-in trigger the new habit can borrow.</p>
+
+    <h2>Key takeaways</h2>
+    <ul>
+      <li>Habit stacking attaches a new habit to an <strong>existing automatic cue</strong>, so you don't have to remember it.</li>
+      <li>The formula: <strong>After I [current habit], I will [new habit].</strong></li>
+      <li>Pick anchors that are <strong>specific, daily, and already reliable</strong> — not aspirational.</li>
+      <li>Stack <strong>one habit at a time</strong>, keep it tiny, and track the stack so you can see it holding.</li>
+    </ul>
+
+    <h2>What habit stacking is (and why it works)</h2>
+    <p>Every habit follows a loop: a <strong>cue</strong> triggers a <strong>routine</strong> that delivers a <strong>reward</strong>. The hardest part of a new habit is almost never the action itself — it's remembering to do it at the right moment, day after day. That's where most good intentions quietly die.</p>
+    <p>Habit stacking solves the cue problem by piggybacking on behaviours that already run on autopilot. You already brush your teeth, pour your coffee, and sit down at your desk without a second thought. Each of those is a dependable trigger just sitting there, waiting to launch something new. By linking a fresh habit to an established one, you inherit a cue you never have to build.</p>
+    <blockquote>You don't need a new alarm. You need a new link.</blockquote>
+    <p>Psychologists call the underlying mechanism an <em>implementation intention</em> — a specific "when X happens, I will do Y" plan. Decades of studies have found that people who form these concrete plans follow through far more often than those who simply intend to "do more" of something. Habit stacking is just the most practical, everyday version of that idea.</p>
+
+    <h2>The formula</h2>
+    <p>Write your stack as a single, unambiguous sentence:</p>
+    <p><strong>After I [current habit], I will [new habit].</strong></p>
+    <p>The power is in the precision. "I'll read more" has no cue and no boundary, so it never happens. "After I get into bed, I will read one page" has an exact trigger and a tiny, unmissable action. The more specific the anchor and the smaller the new habit, the more reliably the stack fires.</p>
+
+    <h2>Real examples you can copy</h2>
+    <ul>
+      <li>After I pour my morning coffee, I will write down my most important task for the day.</li>
+      <li>After I brush my teeth at night, I will lay out tomorrow's clothes.</li>
+      <li>After I sit down at my desk, I will take three slow breaths before opening email.</li>
+      <li>After I close my laptop for the day, I will write one line about what went well.</li>
+      <li>After I put my dinner plate in the sink, I will go for a five-minute walk.</li>
+    </ul>
+    <p>Notice that each anchor is something that already happens on its own, every day, at a predictable moment. That reliability is what you're borrowing.</p>
+
+    <h2>How to choose a good anchor</h2>
+    <p>Not every existing behaviour makes a good anchor. The best ones share three traits:</p>
+    <ul>
+      <li><strong>Specific.</strong> "After lunch" is vague; "after I rinse my lunch plate" is a precise moment.</li>
+      <li><strong>Daily and consistent.</strong> An anchor you only do some days produces a habit you only do some days.</li>
+      <li><strong>Matched in context.</strong> Stack a calm habit onto a calm moment and an energetic habit onto an active one. Trying to meditate right after a hectic school-run rarely sticks.</li>
+    </ul>
+    <p>Also match the <em>frequency</em>. If you want a daily habit, anchor it to a daily behaviour. If you anchor "do ten push-ups" to "after my weekly team call," you'll get a weekly habit at best.</p>
+
+    <h2>Common mistakes to avoid</h2>
+    <ul>
+      <li><strong>Stacking too much at once.</strong> A five-link chain on day one collapses fast. Add one habit, let it settle, then add the next.</li>
+      <li><strong>Making the new habit too big.</strong> "After I sit down, I will write for an hour" isn't a stack — it's a wish. Start with one sentence or one minute.</li>
+      <li><strong>Choosing a flaky anchor.</strong> If the anchor itself isn't automatic yet, you're building on sand.</li>
+      <li><strong>No feedback loop.</strong> Without tracking, you can't tell whether the stack is actually holding or quietly fading.</li>
+    </ul>
+
+    <h2>Turn a stack into a routine</h2>
+    <p>Once a single stack feels effortless, you can chain another habit onto the end of it. Over time, individual links grow into a full sequence: coffee → plan the day → two-minute stretch → three breaths. This is exactly how a durable <a href="/blog/how-to-build-a-morning-routine/">morning routine</a> is built — not designed all at once, but grown one link at a time.</p>
+    <p>Keeping each habit small is what makes the chain survive bad days, a principle we cover in <a href="/blog/small-habits-that-actually-stick/">small habits that actually stick</a>. A short stack you complete every day will always beat an ambitious one you abandon by Thursday.</p>
+
+    <h2>Track your stack so it holds</h2>
+    <p>A stack lives or dies on consistency, and consistency is hard to judge from memory. Checking off each habit turns an invisible routine into a visible chain and gives you an honest completion rate instead of a vague sense that you've "mostly" been doing it.</p>
+    <p>With <a href="/">Sprout</a> you can create each habit in a stack, group them into a routine, and tick them off offline in seconds — no account required and nothing leaving your device. As the check-ins add up, a real <a href="/blog/how-streaks-work/">streak</a> forms from your actual effort, giving you a reason to keep the chain unbroken. Start one stack today, anchor it to something you already do, and let the habit you already have carry the one you want.</p>
+
+    <h2>Frequently asked questions</h2>
+    <div class="faq">
+      <details class="qa" open>
+        <summary>What is habit stacking?</summary>
+        <p>Habit stacking is a technique for starting a new habit by attaching it to one you already do automatically. You use the formula "After I [current habit], I will [new habit]" so the existing habit becomes a reliable cue for the new one.</p>
+      </details>
+      <details class="qa">
+        <summary>Does habit stacking actually work?</summary>
+        <p>Yes. It works because it borrows the trigger from a behaviour that is already automatic, removing the need to remember or rely on motivation. It's a practical form of an implementation intention, a strategy repeatedly shown in research to increase follow-through.</p>
+      </details>
+      <details class="qa">
+        <summary>What is a good example of a habit stack?</summary>
+        <p>"After I pour my morning coffee, I will write down my most important task for the day." The coffee is the anchor, the planning is the new habit, and the sequence runs on an existing cue instead of willpower.</p>
+      </details>
+      <details class="qa">
+        <summary>How many habits can I stack at once?</summary>
+        <p>Start with one new habit per anchor. Once that single addition feels automatic — usually after one to three weeks — you can chain another onto it. Stacking too many at once overloads the sequence and makes the whole stack fragile.</p>
+      </details>
+    </div>
+
+    <div class="article-cta">
+      <h3>Build your first habit stack</h3>
+      <p>Create a stack in Sprout, group it into a routine, and check it off offline in seconds — free to start, no account needed.</p>
+      <a href="/#download" class="btn btn-dark btn-lg">Download Sprout</a>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="/"><img class="logo" src="/assets/logo.svg" alt="Sprout logo" width="30" height="30"> Sprout</a>
+        <p class="footer-about">An offline-first habit &amp; wellness app that turns small daily actions into lasting change.</p>
+      </div>
+      <div class="footer-col"><h4>Product</h4><a href="/#features">Features</a><a href="/#how">How it works</a><a href="/#premium">Premium</a><a href="/#download">Download</a></div>
+      <div class="footer-col"><h4>Resources</h4><a href="/blog/">Blog</a><a href="/support">Help &amp; contact</a><a href="/#faq">FAQ</a></div>
+      <div class="footer-col"><h4>Legal</h4><a href="/privacy">Privacy Policy</a><a href="/terms">Terms of Service</a><a href="/delete-account">Delete account</a></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Sprout by one1 Eleven dev. All rights reserved.</span>
+      <span>Made with 🌱 for people building better days.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var nav=document.getElementById('nav'),toggle=document.getElementById('navToggle');
+  if(toggle){toggle.addEventListener('click',function(){nav.classList.toggle('open');});}
+</script>
+</body>
+</html>

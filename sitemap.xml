@@ -14,9 +14,27 @@
   </url>
   <url>
     <loc>https://sprout.princelabs.me/blog/</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sprout.princelabs.me/blog/how-to-build-a-morning-routine/</loc>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://sprout.princelabs.me/blog/habit-stacking-guide/</loc>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://sprout.princelabs.me/blog/do-habit-tracking-apps-work/</loc>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://sprout.princelabs.me/blog/how-streaks-work/</loc>

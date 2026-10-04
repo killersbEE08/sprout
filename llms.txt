@@ -31,5 +31,14 @@ cloud sync, community access, and premium themes. Billed via the app store.
 - Terms of Service: https://sprout.princelabs.me/terms
 - Account deletion: https://sprout.princelabs.me/delete-account
 
+## Blog
+- Blog home: https://sprout.princelabs.me/blog/
+- How to build a morning routine that actually sticks: https://sprout.princelabs.me/blog/how-to-build-a-morning-routine/
+- Habit stacking — how to attach new habits to ones you already have: https://sprout.princelabs.me/blog/habit-stacking-guide/
+- Do habit tracking apps actually work? What the science says: https://sprout.princelabs.me/blog/do-habit-tracking-apps-work/
+- How streaks actually work (and why yours keeps breaking): https://sprout.princelabs.me/blog/how-streaks-work/
+- Habit tracking without giving up your privacy: https://sprout.princelabs.me/blog/habit-tracking-without-giving-up-privacy/
+- Small habits that actually stick — a practical guide: https://sprout.princelabs.me/blog/small-habits-that-actually-stick/
+
 ## Contact
-- Support email: support@sprout.app
+- Support email: hello@princelabs.me

@@ -27,7 +27,7 @@
 <title>Sprout — Build better habits, one day at a time</title>
 <meta name="description" content="Sprout is an offline-first habit & wellness app. Track habits, build real streaks, hit goals, meditate and stay consistent — no account required, no ads, private by design.">
 <meta name="keywords" content="habit tracker, habit app, streaks, offline habit tracker, meditation timer, wellness app, private habit tracker, no account habit app">
-<meta name="author" content="Prince Labs">
+<meta name="author" content="one1 Eleven dev">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta name="theme-color" content="#ffffff">
 <link rel="canonical" href="https://sprout.princelabs.me/">
@@ -52,6 +52,7 @@
 
 <link rel="icon" type="image/svg+xml" href="/assets/logo.svg">
 <link rel="apple-touch-icon" href="/assets/logo.svg">
+<link rel="manifest" href="/site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -82,16 +83,41 @@
     { "@type": "Offer", "name": "Free", "price": "0", "priceCurrency": "USD" },
     { "@type": "Offer", "name": "Premium", "price": "3.99", "priceCurrency": "USD" }
   ],
-  "publisher": { "@type": "Organization", "name": "Prince Labs", "url": "https://sprout.princelabs.me/" }
+  "publisher": { "@id": "https://sprout.princelabs.me/#organization" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://sprout.princelabs.me/#organization",
+  "name": "one1 Eleven dev",
+  "url": "https://sprout.princelabs.me/",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://sprout.princelabs.me/assets/logo.svg"
+  },
+  "image": "https://sprout.princelabs.me/assets/og-cover.png",
+  "description": "Maker of Sprout — an offline-first habit & wellness app that turns small daily actions into lasting change.",
+  "email": "hello@princelabs.me",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer support",
+    "email": "hello@princelabs.me",
+    "availableLanguage": ["English"]
+  }
 }
 </script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
+  "@id": "https://sprout.princelabs.me/#website",
   "name": "Sprout",
   "url": "https://sprout.princelabs.me/",
-  "description": "Offline-first habit & wellness app — real streaks, honest analytics, goals, routines and meditation."
+  "inLanguage": "en",
+  "description": "Offline-first habit & wellness app — real streaks, honest analytics, goals, routines and meditation.",
+  "publisher": { "@id": "https://sprout.princelabs.me/#organization" }
 }
 </script>
 <script type="application/ld+json">
@@ -566,7 +592,7 @@
         <a href="/support">Help &amp; contact</a>
         <a href="/blog/">Blog</a>
         <a href="#faq">FAQ</a>
-        <a href="mailto:support@sprout.app">support@sprout.app</a>
+        <a href="mailto:hello@princelabs.me">hello@princelabs.me</a>
       </div>
       <div class="footer-col">
         <h4>Legal</h4>
@@ -576,7 +602,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Sprout. All rights reserved.</span>
+      <span>© 2026 Sprout by one1 Eleven dev. All rights reserved.</span>
       <span>Made with 🌱 for people building better days.</span>
     </div>
   </div>
