@@ -1,6 +1,6 @@
 # Sprout — Marketing Website
 
-Static marketing site for **Sprout**, a playful, offline-first habit &amp; wellness app.
+Static marketing site for **Sprout**, a playful, offline-first maths training game.
 
 No build step, no dependencies — plain HTML + CSS. Hosted on **Cloudflare Pages**.
 
@@ -11,7 +11,7 @@ No build step, no dependencies — plain HTML + CSS. Hosted on **Cloudflare Page
 | `index.html`           | `/`                | Landing page                        |
 | `privacy.html`         | `/privacy`         | Privacy Policy                      |
 | `terms.html`           | `/terms`           | Terms of Service                    |
-| `delete-account.html`  | `/delete-account`  | Account &amp; data deletion         |
+| `delete-account.html`  | `/delete-account`  | Data reset &amp; deletion            |
 | `support.html`         | `/support`         | Support / contact / FAQ             |
 | `404.html`             | (not found)        | Branded 404 page                    |
 

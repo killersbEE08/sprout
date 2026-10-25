@@ -1,7 +1,7 @@
 {
-  "name": "Sprout — Build better habits",
+  "name": "Sprout — Train your maths",
   "short_name": "Sprout",
-  "description": "Offline-first habit & wellness app with real streaks, honest analytics, goals, routines and meditation. No account, no ads, private by design.",
+  "description": "Offline-first maths training game with 18 skill games, Rapid Fire speed rounds, adaptive difficulty and honest progress diagnostics. No account, no ads, private by design.",
   "lang": "en",
   "start_url": "/",
   "scope": "/",
@@ -9,7 +9,7 @@
   "orientation": "portrait",
   "background_color": "#ffffff",
   "theme_color": "#7C4DFF",
-  "categories": ["health", "lifestyle", "productivity"],
+  "categories": ["education", "games", "productivity"],
   "icons": [
     { "src": "/assets/logo.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
   ]

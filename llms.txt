@@ -1,44 +1,39 @@
 # Sprout
 
-> Sprout is an offline-first habit and wellness app that turns small, consistent
-> daily actions into lasting change. It tracks habits, builds timezone-safe streaks,
-> shows honest analytics, supports goals and routines, and includes a calming
-> meditation timer. It works fully offline and requires no account or sign-up.
+> Sprout is an offline-first maths training game that turns short daily practice
+> into real skill. It offers 18 maths skill games, Rapid Fire timed speed rounds,
+> difficulty that adapts to you, honest progress diagnostics, a Mistake Notebook
+> with spaced-repetition review, and structured Learning Journeys. It works fully
+> offline and requires no account or sign-up.
 
 ## Key facts
-- Category: Habit tracker / wellness / productivity app
+- Category: Maths training game / education / brain training
+- Audience: Learners aged 13–60
 - Platforms: iOS and Android (coming soon)
-- Price: Free forever core app; optional Premium at $3.99/month
+- Price: Free core game; optional Premium with monthly, yearly and lifetime plans ($3.99/month)
 - Privacy: Offline-first, data stored locally on device, no ads, no trackers, no data selling
-- Account: Not required — fully usable as a guest; an account is only needed for optional cloud sync and community
+- Account: Not required — the app is account-free, with no login or email screen
 
 ## Core features
-- Real streaks: computed in calendar-day space and stored in UTC, so travel and daylight saving never break progress
-- Honest analytics: completion rates, weekly consistency and trend charts derived only from real, stored check-ins
-- Goals & routines: measurable goals and morning/evening habit chains
-- Meditation timer: distraction-free timer with recorded sessions
-- Achievements: milestones earned from genuine effort, never fabricated
-- Smart reminders: on-device reminders that fire on time, offline, across time zones and DST
+- 18 skill games: Cross Math, Mental Sprint, Multiplication, Division, Powers and Roots, Number Sequences, Equation Builder, Missing Number, Fractions, Percent and Money, Ratio and Proportion, Order of Operations, Algebra, Geometry, Logic Grid, Estimation, Word Problems and Math Riddles
+- Rapid Fire: mixed-difficulty timed rounds (30s, 60s, 90s or two minutes); focus one skill or all
+- Adaptive difficulty and Smart Workout: 12-question sessions built around your weak skills
+- Honest diagnostics: accuracy, response time, XP, levels, practice streaks and per-concept mastery, all from real answers
+- Mistake Notebook: wrong answers saved with the correct method, resurfaced as reviews on day 1, 3, 7, 14 and 30
+- Learning Journeys and achievements: six structured journeys and eight progressive achievements
+- Placement assessment sets your starting level and daily practice goal
 
-## Premium ($3.99/month)
-Everything in Free, plus advanced analytics & insights, unlimited goals & routines,
-cloud sync, community access, and premium themes. Billed via the app store.
+## Premium (monthly / yearly / lifetime)
+Everything in Free, plus Expert difficulty, longer Rapid Fire sessions, Smart Workout,
+detailed skill diagnostics, the Mistake Notebook, premium colour themes and future
+puzzle packs. Billed via the app store.
 
 ## Pages
 - Home: https://sprout.princelabs.me/
 - Support: https://sprout.princelabs.me/support
 - Privacy Policy: https://sprout.princelabs.me/privacy
 - Terms of Service: https://sprout.princelabs.me/terms
-- Account deletion: https://sprout.princelabs.me/delete-account
-
-## Blog
-- Blog home: https://sprout.princelabs.me/blog/
-- How to build a morning routine that actually sticks: https://sprout.princelabs.me/blog/how-to-build-a-morning-routine/
-- Habit stacking — how to attach new habits to ones you already have: https://sprout.princelabs.me/blog/habit-stacking-guide/
-- Do habit tracking apps actually work? What the science says: https://sprout.princelabs.me/blog/do-habit-tracking-apps-work/
-- How streaks actually work (and why yours keeps breaking): https://sprout.princelabs.me/blog/how-streaks-work/
-- Habit tracking without giving up your privacy: https://sprout.princelabs.me/blog/habit-tracking-without-giving-up-privacy/
-- Small habits that actually stick — a practical guide: https://sprout.princelabs.me/blog/small-habits-that-actually-stick/
+- Data deletion: https://sprout.princelabs.me/delete-account
 
 ## Contact
 - Support email: hello@princelabs.me
